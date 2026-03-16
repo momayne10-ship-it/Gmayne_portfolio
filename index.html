@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>G Mayne – حلول تكنولوجية</title>
+  
+  <!-- المكتبات الخارجية -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- ملف CSS الرئيسي -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- أيقونة الموقع -->
+  <link rel="icon" href="data:image/svg+xml;utf8,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+    <defs>
+      <linearGradient id='grad3d' x1='0%' y1='0%' x2='0%' y2='100%'>
+        <stop offset='0%' stop-color='%2334d058'/>
+        <stop offset='100%' stop-color='%2327ae60'/>
+      </linearGradient>
+      <filter id='shadow' x='-20%' y='-20%' width='140%' height='140%'>
+        <feDropShadow dx='2' dy='2' stdDeviation='3' flood-color='%23000' flood-opacity='0.3'/>
+      </filter>
+    </defs>
+    <circle cx='50' cy='50' r='45' fill='url(%23grad3d)' filter='url(%23shadow)'/>
+    <text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>G</text>
+  </svg>">
+</head>
+<body>
+  <!-- ========== HEADER (النافبار المتكامل) ========== -->
+  <nav class="navbar" id="navbar">
+  <a href="#" class="logo">
+    <div class="logo-icon">
+      <span class="logo-g">جي</span>
+    </div>
+    <span class="logo-text">ماين</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#home" class="active">الرئيسية</a></li>
+    <li><a href="#about">من نحن</a></li>
+    <li><a href="#solutions">الحلول</a></li>
+    <li><a href="#contact">اتصل بنا</a></li>
+    <!-- عنصر اللغة للجوال (يظهر فقط في الشاشات الصغيرة) -->
+    <li class="mobile-language-item">
+      <button class="mobile-language-toggle" id="mobileLanguageToggle">
+        <span class="mobile-language-flag" id="mobileLanguageFlag">🇸🇦</span>
+        <span id="mobileLanguageText">العربية</span>
+      </button>
+    </li>
+  </ul>
+
+  <div class="nav-actions">
+    <!-- يمكن إضافة أيقونات هنا لاحقاً -->
+  </div>
+
+  <!-- زر القائمة - الآن سيعرض إشعار فقط بدون فتح القائمة -->
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+  <!-- ========== HERO SECTION (بصورة ثابتة) ========== -->
+  <section class="hero-section" id="home">
+    <!-- الخلفية الثابتة -->
+    <div class="hero-static-bg"></div>
+
+    <!-- سلايدر Swiper -->
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <!-- الشريحة 1 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <h1>حوّل أفكارك إلى منصات رقمية</h1>
+            <p>مساعدة رواد الأعمال والشركات الناشئة على تحويل أفكارهم إلى منصات رقمية وتطبيقات ويب حقيقية.</p>
+            <a href="#contact" class="btn-hero">ابدأ مشروعك الآن</a>
+          </div>
+        </div>
+        <!-- الشريحة 2 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <h1>تطوير تطبيقات ويب حديثة</h1>
+            <p>بناء تطبيقات ويب سريعة وآمنة وقابلة للتوسع باستخدام أحدث التقنيات.</p>
+            <a href="#contact" class="btn-hero">اطلب تطبيقك</a>
+          </div>
+        </div>
+        <!-- الشريحة 3 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <h1>بناء منصات رقمية متكاملة</h1>
+            <p>تصميم وتطوير منصات رقمية مخصصة لإدارة الأعمال والخدمات.</p>
+            <a href="#contact" class="btn-hero">أنشئ منصتك</a>
+          </div>
+        </div>
+        <!-- الشريحة 4 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <h1>تصميم مواقع احترافية</h1>
+            <p>مواقع حديثة وسريعة تساعدك على بناء حضور رقمي قوي.</p>
+            <a href="#contact" class="btn-hero">اطلب موقعك</a>
+          </div>
+        </div>
+        <!-- الشريحة 5 -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <h1>دعم مشاريع Start-up للانطلاق</h1>
+            <p>تحويل الأفكار إلى منصات رقمية أو تطبيقات جاهزة للاستخدام.</p>
+            <a href="#contact" class="btn-hero">حوّل فكرتك إلى مشروع</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- أزرار التنقل -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- ترقيم الصفحات -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Hook قصير أسفل الشريحة -->
+    <div class="hero-hook">
+      <h2>تحويل الأفكار إلى منصات رقمية جاهزة للعمل</h2>
+    </div>
+  </section>
+<!-- ===== قسم من أنا (About Section) - كتابة أصلية + صورة مدمجة ===== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>من أنا</h2>
+      <p>لمحة عن المسيرة المهنية والخبرة في تطوير الحلول الرقمية</p>
+    </div>
+    
+    <div class="about-container">
+      <!-- الصورة على اليمين - بدون أي حدود -->
+      <div class="about-image-area">
+        <img src="about.png" alt="عبد المؤمن" class="about-image">
+      </div>
+      
+      <!-- المحتوى على اليسار -->
+      <div class="about-content">
+        <h2>مرحبًا، أنا <span style="color: #10b981;">عبد المؤمن</span></h2>
+        <p>مهندس في مجال الحاسب الآلي ولدي أكثر من 3 سنوات من الخبرة في تطوير المنصات الرقمية وتطبيقات الويب وبناء الأنظمة المخصصة للمؤسسات والشركات.</p>
+        
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <p>تصميم وتطوير حلول رقمية عملية تساعد على تحسين سير العمل</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <p>تحويل الأفكار والمشاريع إلى منصات رقمية وتطبيقات ويب قابلة للاستخدام</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <p>العمل مع الشركات ورواد الأعمال لبناء مشاريع تقنية فعالة</p>
+          </div>
+        </div>
+        
+        <p>التركيز على بناء حلول تقنية بسيطة وقابلة للتطوير تساعد المؤسسات على إدارة أعمالها وتحقيق أهدافها بكفاءة.</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== قسم الحلول / لماذا تختار عبد المؤمن ===== -->
+<section class="solutions-section" id="solutions">
+  <div class="container">
+    <div class="section-title">
+      <h2>لماذا تختار عبد المؤمن</h2>
+      <p>تقديم حلول رقمية متقدمة تجمع بين الابتكار التقني، التصميم الاحترافي، وبناء أنظمة قابلة للنمو والتوسع.</p>
+    </div>
+    
+    <div class="solutions-grid">
+      
+      <!-- البطاقة 1 - الذكاء الاصطناعي -->
+      <div class="solution-card" style="--order: 1;">
+        <div class="solution-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>دمج الذكاء الاصطناعي</h3>
+        <p>تطوير حلول ومنصات رقمية مدعومة بالذكاء الاصطناعي لتحسين تجربة المستخدم وأتمتة العمليات.</p>
+      </div>
+      
+      <!-- البطاقة 2 - تطوير التطبيقات -->
+      <div class="solution-card" style="--order: 2;">
+        <div class="solution-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>تطوير المنصات الرقمية</h3>
+        <p>تصميم وتطوير منصات رقمية وتطبيقات ويب مخصصة تلبي احتياجات المؤسسات ورواد الأعمال.</p>
+      </div>
+      
+      <!-- البطاقة 3 - الأمن السيبراني -->
+      <div class="solution-card" style="--order: 3;">
+        <div class="solution-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>حماية وتشفير البيانات</h3>
+        <p>بناء أنظمة آمنة مع تطبيق أفضل ممارسات الحماية والتشفير للحفاظ على سرية البيانات.</p>
+      </div>
+      
+      <!-- البطاقة 4 - التصميم الاحترافي -->
+      <div class="solution-card" style="--order: 4;">
+        <div class="solution-icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3>تصميم واجهات احترافية</h3>
+        <p>تصميم واجهات مستخدم حديثة وسهلة الاستخدام تركز على تجربة المستخدم والجمالية البصرية.</p>
+      </div>
+      
+      <!-- البطاقة 5 - تطوير أنظمة مرنة -->
+      <div class="solution-card" style="--order: 5;">
+        <div class="solution-icon">
+          <i class="fas fa-layer-group"></i>
+        </div>
+        <h3>أنظمة قابلة للنمو</h3>
+        <p>تطوير مشاريع وأنظمة مرنة قابلة للتوسع والنمو مع تطور احتياجات المؤسسات.</p>
+      </div>
+      
+      <!-- البطاقة 6 - تصميم قواعد البيانات -->
+      <div class="solution-card" style="--order: 6;">
+        <div class="solution-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>تصميم وإدارة قواعد البيانات</h3>
+        <p>بناء قواعد بيانات قوية ومنظمة تدعم الأنظمة الرقمية وتضمن الأداء والاستقرار.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ===== قسم المهارات (Skills Section) - تصميم إبداعي ===== -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <div class="section-title">
+      <h2>مهاراتي التقنية</h2>
+      <p>مجموعة من أحدث التقنيات ولغات البرمجة التي أتقنها لتقديم حلول مبتكرة</p>
+    </div>
+
+    <!-- طريقة العرض الأولى: بطاقات المهارات المتقدمة -->
+    <div class="skills-showcase">
+      <h3 class="skills-category-title"><span>لغات البرمجة الأساسية</span></h3>
+      <div class="skills-grid">
+        <!-- HTML5 -->
+        <div class="skill-card" data-level="متقدم">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="skill-info">
+            <h4>HTML5</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="skill-percentage">100%</div>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="skill-card" data-level="متقدم">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="skill-info">
+            <h4>CSS3</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="skill-percentage">75%</div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card" data-level="متقدم">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="skill-info">
+            <h4>JavaScript</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 83%;"></div>
+            </div>
+          </div>
+          <div class="skill-percentage">83%</div>
+        </div>
+
+        <!-- PHP -->
+        <div class="skill-card" data-level="متقدم">
+          <div class="skill-icon">
+            <i class="fab fa-php"></i>
+          </div>
+          <div class="skill-info">
+            <h4>PHP</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 93%;"></div>
+            </div>
+          </div>
+          <div class="skill-percentage">93%</div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card" data-level="متقدم">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="skill-info">
+            <h4>Python</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 88%;"></div>
+            </div>
+          </div>
+          <div class="skill-percentage">88%</div>
+        </div>
+
+        <!-- SQL -->
+        <div class="skill-card" data-level="متقدم">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="skill-info">
+            <h4>SQL</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-percentage">90%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- طريقة العرض الثانية: أطر العمل والتقنيات (عرض دائري) -->
+    <div class="frameworks-showcase">
+      <h3 class="skills-category-title"><span>أطر العمل والتقنيات</span></h3>
+      <div class="frameworks-grid">
+        <!-- React -->
+        <div class="framework-item">
+          <div class="framework-circle" style="--percent: 70;">
+            <div class="circle-inner">
+              <i class="fab fa-react"></i>
+            </div>
+          </div>
+          <h4>React</h4>
+        </div>
+
+        <!-- Vue.js -->
+        <div class="framework-item">
+          <div class="framework-circle" style="--percent: 80;">
+            <div class="circle-inner">
+              <i class="fab fa-vuejs"></i>
+            </div>
+          </div>
+          <h4>Vue.js</h4>
+        </div>
+
+        <!-- Node.js -->
+        <div class="framework-item">
+          <div class="framework-circle" style="--percent: 70;">
+            <div class="circle-inner">
+              <i class="fab fa-node"></i>
+            </div>
+          </div>
+          <h4>Node.js</h4>
+        </div>
+
+        <!-- Laravel -->
+        <div class="framework-item">
+          <div class="framework-circle" style="--percent: 80;">
+            <div class="circle-inner">
+              <i class="fab fa-laravel"></i>
+            </div>
+          </div>
+          <h4>Laravel</h4>
+        </div>
+
+       
+
+       
+
+        <!-- MySQL -->
+        <div class="framework-item">
+          <div class="framework-circle" style="--percent: 92;">
+            <div class="circle-inner">
+              <i class="fas fa-database"></i>
+            </div>
+          </div>
+          <h4>MySQL</h4>
+        </div>
+
+        <!-- Git -->
+        <div class="framework-item">
+          <div class="framework-circle" style="--percent: 90;">
+            <div class="circle-inner">
+              <i class="fab fa-git-alt"></i>
+            </div>
+          </div>
+          <h4>Git</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- طريقة العرض الثالثة: مهارات إضافية (شريط تقدم أنيق) -->
+   
+  </div>
+</section>
+
+<!-- ===== قسم اتصل بنا (Contact Section) - مطابق تماماً للأصل مع تصحيح الأخطاء ===== -->
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="section-title text-center">
+      <h2>اتصل بي</h2>
+      <p>هل لديك فكرة مشروع أو تحتاج إلى مساعدة لعملك؟ دعنا نتواصل!</p>
+    </div>
+    
+    <form id="contactForm" class="contact-form needs-validation" novalidate action="https://formspree.io/f/mzzanwoy" method="POST" dir="rtl">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">اسمك</label>
+          <input type="text" class="form-control" id="name" name="name" pattern="[\u0600-\u06FFa-zA-Z\s\-']+" placeholder="أدخل اسمك" required>
+          <div class="invalid-feedback">يرجى إدخال اسم صالح (حروف عربية أو إنجليزية، مسافات، شرطات، أو علامات تنصيص فقط)</div>
+        </div>
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+          <div class="invalid-feedback">يرجى إدخال بريد إلكتروني صالح</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="subject">الموضوع</label>
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="أدخل الموضوع" required>
+        <div class="invalid-feedback">يرجى إدخال موضوع</div>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">رسالتك</label>
+        <textarea class="form-control" id="message" name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+        <div class="invalid-feedback">يرجى إدخال رسالتك</div>
+      </div>
+      
+      <!-- حماية ضد البوتات (اختياري) -->
+      <input type="text" name="_gotcha" style="display:none">
+      
+      <button type="submit" class="btn-submit" id="submitBtn">
+        <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<section class="portfolio-section" id="portfolio">
+  <div class="container">
+    <!-- عنوان القسم -->
+    <div class="section-title">
+      <h2>أعمال <span class="gradient-text">أفتخر بها</span></h2>
+      <p class="subtitle">أنظمة رقمية ومنصات إلكترونية قمت بتطويرها لمختلف القطاعات</p>
+    </div>
+
+    <!-- مقدمة القسم -->
+    <div class="portfolio-intro">
+      <div class="intro-card">
+        <div class="intro-icon">
+          <i class="fas fa-code-branch"></i>
+        </div>
+        <div class="intro-text">
+          <h3>تم تطوير العديد من الأنظمة والمنصات الرقمية</h3>
+          <p>لمؤسسات مختلفة في قطاعات التعليم، الثقافة، والصحة. بعض هذه المشاريع لا يمكن عرضها بشكل عام احترامًا لخصوصية العملاء.</p>
+          <div class="privacy-note">
+            <i class="fas fa-lock"></i>
+            <span>للاطلاع على نماذج إضافية من الأعمال، لا تتردد في التواصل معي.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- شبكة المشاريع -->
+    <div class="portfolio-grid">
+      <!-- المشروع 1 - نظام روضة أطفال -->
+      <div class="portfolio-item">
+        <div class="portfolio-card">
+          <div class="card-media">
+            <div class="media-placeholder" style="background: linear-gradient(135deg, #FF9A8B, #FF6A88);">
+              <i class="fas fa-child"></i>
+            </div>
+            <div class="project-tag">نظام تعليمي</div>
+          </div>
+          <div class="card-content">
+            <h3>نظام رقمي لإدارة رياض الأطفال</h3>
+            <p class="project-description">منصة متكاملة لإدارة رياض الأطفال تشمل متابعة الأطفال، التواصل مع أولياء الأمور، وتقارير يومية</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Laravel</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Firebase</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-status status-completed">
+                <i class="fas fa-check-circle"></i> مكتمل
+              </span>
+              <button class="btn-showcase" data-project-id="kindergarten">
+                <span>عرض التفاصيل</span>
+                <i class="fas fa-arrow-left"></i>
+              </button>
+            </div>
+          </div>
+          <!-- بطاقة التفاصيل الإضافية للهاتف -->
+          <div class="mobile-details">
+            <div class="mobile-details-content">
+              <h4>تفاصيل النظام</h4>
+              <ul>
+                <li><i class="fas fa-check"></i> تسجيل ومتابعة الأطفال</li>
+                <li><i class="fas fa-check"></i> التواصل مع أولياء الأمور</li>
+                <li><i class="fas fa-check"></i> تقارير يومية وأسبوعية</li>
+                <li><i class="fas fa-check"></i> جدول الأنشطة والفعاليات</li>
+                <li><i class="fas fa-check"></i> سجل طبي وتطعيمات</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- المشروع 2 - منصة متحف -->
+      <div class="portfolio-item">
+        <div class="portfolio-card">
+          <div class="card-media">
+            <div class="media-placeholder" style="background: linear-gradient(135deg, #A9C9FF, #7B90FF);">
+              <i class="fas fa-landmark"></i>
+            </div>
+            <div class="project-tag">منصة ثقافية</div>
+          </div>
+          <div class="card-content">
+            <h3>منصة رقمية للمتحف الوطني</h3>
+            <p class="project-description">منصة تفاعلية لعرض المقتنيات الأثرية، جولات افتراضية، ونظام حجز للزيارات</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Vue.js</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Three.js</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-status status-completed">
+                <i class="fas fa-check-circle"></i> مكتمل
+              </span>
+              <button class="btn-showcase" data-project-id="museum">
+                <span>عرض التفاصيل</span>
+                <i class="fas fa-arrow-left"></i>
+              </button>
+            </div>
+          </div>
+          <!-- بطاقة التفاصيل الإضافية للهاتف -->
+          <div class="mobile-details">
+            <div class="mobile-details-content">
+              <h4>تفاصيل المنصة</h4>
+              <ul>
+                <li><i class="fas fa-check"></i> جولات افتراضية ثلاثية الأبعاد</li>
+                <li><i class="fas fa-check"></i> قاعدة بيانات للمقتنيات</li>
+                <li><i class="fas fa-check"></i> نظام حجز تذاكر إلكتروني</li>
+                <li><i class="fas fa-check"></i> جولات صوتية تفاعلية</li>
+                <li><i class="fas fa-check"></i> لوحة تحكم للمشرفين</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- المشروع 3 - نظام عيادة -->
+      <div class="portfolio-item">
+        <div class="portfolio-card">
+          <div class="card-media">
+            <div class="media-placeholder" style="background: linear-gradient(135deg, #84fab0, #8fd3f4);">
+              <i class="fas fa-clinic-medical"></i>
+            </div>
+            <div class="project-tag">نظام صحي</div>
+          </div>
+          <div class="card-content">
+            <h3>نظام ذكي لإدارة العيادات</h3>
+            <p class="project-description">نظام متكامل لإدارة العيادات يشمل مواعيد، ملفات مرضى، وفواتير إلكترونية</p>
+            <div class="tech-stack">
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">REST API</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-status status-completed">
+                <i class="fas fa-check-circle"></i> مكتمل
+              </span>
+              <button class="btn-showcase" data-project-id="clinic">
+                <span>عرض التفاصيل</span>
+                <i class="fas fa-arrow-left"></i>
+              </button>
+            </div>
+          </div>
+          <!-- بطاقة التفاصيل الإضافية للهاتف -->
+          <div class="mobile-details">
+            <div class="mobile-details-content">
+              <h4>تفاصيل النظام</h4>
+              <ul>
+                <li><i class="fas fa-check"></i> نظام مواعيد ذكي</li>
+                <li><i class="fas fa-check"></i> ملفات مرضى إلكترونية</li>
+                <li><i class="fas fa-check"></i> فواتير ومتابعة مدفوعات</li>
+                <li><i class="fas fa-check"></i> تقارير وإحصائيات</li>
+                <li><i class="fas fa-check"></i> تذكيرات للمرضى</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- مشاريع إضافية (صغيرة) -->
+    <div class="additional-projects">
+      <h3>مشاريع أخرى</h3>
+      <div class="mini-projects-grid">
+        <div class="mini-project">
+          <i class="fas fa-store"></i>
+          <span>منصة تجارة إلكترونية</span>
+        </div>
+        <div class="mini-project">
+          <i class="fas fa-hotel"></i>
+          <span>نظام حجز فنادق</span>
+        </div>
+        <div class="mini-project">
+          <i class="fas fa-truck"></i>
+          <span>نظام لوجستي</span>
+        </div>
+        <div class="mini-project">
+          <i class="fas fa-school"></i>
+          <span>نظام إدارة مدرسي</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action للتواصل -->
+    <div class="portfolio-cta">
+      <div class="cta-content">
+        <h3>هل لديك مشروع وتحتاج إلى مطور محترف؟</h3>
+        <p>أنا مستعد لمساعدتك في تحويل فكرتك إلى واقع رقمي</p>
+        <a href="#contact" class="btn-cta">
+          <span>تواصل معي الآن</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- نافذة منبثقة لتفاصيل المشروع (مودال) -->
+<div class="project-modal" id="projectModal">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <button class="modal-close" id="modalCloseBtn">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-content" id="modalContent">
+      <div class="modal-loader">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>جاري تحميل التفاصيل...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== قسم الفوتر (Footer) - تصميم أنيق وبسيط ===== -->
+<footer class="footer-section">
+  <div class="container">
+    <!-- الجزء العلوي من الفوتر -->
+    <div class="footer-top">
+      <!-- معلومات العلامة التجارية -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-g">جي</span>
+          <span class="logo-text">ماين</span>
+        </div>
+        <p class="brand-description">حلول تكنولوجية مبتكرة لتحويل أفكارك إلى منصات رقمية ناجحة</p>
+        <div class="social-links">
+ <a href="https://wa.me/213667123987" class="social-link" aria-label="واتساب" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+  </a>
+  <a href="https://www.instagram.com/mayne_solutions?igsh=aGFjc3RkMDF0bjVm" class="social-link" aria-label="إنستغرام" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@mayne_solutions?_r=1&_t=ZS-94kMbugDOsc" class="social-link" aria-label="تيك توك" target="_blank">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div>
+      </div>
+
+      <!-- روابط سريعة (بسيطة) -->
+      <div class="footer-links">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">من أنا</a></li>
+          <li><a href="#solutions">الحلول</a></li>
+          <li><a href="#portfolio">أعمالي</a></li>
+          <li><a href="#contact">اتصل بي</a></li>
+        </ul>
+      </div>
+
+      <!-- خدمات مختصرة -->
+      <div class="footer-services">
+        <h4>خدماتي</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-code"></i> تطوير تطبيقات الويب</a></li>
+          <li><a href="#"><i class="fas fa-mobile-alt"></i> تطبيقات الجوال</a></li>
+          <li><a href="#"><i class="fas fa-database"></i> قواعد البيانات</a></li>
+          <li><a href="#"><i class="fas fa-paint-brush"></i> تصميم واجهات</a></li>
+        </ul>
+      </div>
+
+      <!-- معلومات الاتصال (مبسطة) -->
+      <div class="footer-contact">
+        <h4>تواصل معي</h4>
+        <ul>
+          <li>
+            <a href="mailto:momayne10@gmail.com">momayne10@gmail.com</a>
+          </li>
+          <li>
+            
+            <a href="tel:+213667123987">87 39 12 0667</a>
+          </li>
+          <li>
+            <span>المسيلة، الجزائر</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- الجزء السفلي من الفوتر (بسيط) -->
+    <div class="footer-bottom">
+      <div class="copyright" >
+        <p>&copy; 2025 G Mayne. جميع الحقوق محفوظة.</p>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+<!-- SweetAlert2 لرسائل التأكيد -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- ===== ملفات الجافاسكريبت ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
